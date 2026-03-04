@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneel Watches | AK Perfume | Luxury Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --black: #050505;
+            --gray: #121212;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--black); color: var(--white); scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0,0,0,0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        .logo-area { display: flex; align-items: center; }
+        .logo-img { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; border: 1px solid var(--gold); }
+        .brand-name { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--gold); font-weight: 900; }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 13px; letter-spacing: 1px; transition: 0.3s; }
+        nav ul li a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1780');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 70px; color: var(--gold); margin-bottom: 10px; }
+        .hero-content p { font-size: 20px; font-weight: 300; letter-spacing: 3px; margin-bottom: 30px; }
+
+        /* Profile & Brand Info */
+        .profile-section { padding: 100px 10%; display: flex; align-items: center; background: var(--gray); gap: 50px; }
+        .profile-img { width: 350px; height: 450px; object-fit: cover; border: 5px solid #222; border-radius: 10px; }
+        .profile-text h2 { font-family: 'Playfair Display', serif; font-size: 40px; color: var(--gold); margin-bottom: 15px; }
+        .profile-text p { color: #aaa; line-height: 1.8; margin-bottom: 20px; }
+        .linkedin-badge { display: inline-block; padding: 10px 20px; background: #0077b5; color: white; text-decoration: none; border-radius: 5px; font-weight: 600; }
+
+        /* Dashboard Showcase (Daraz & Meta) */
+        .dashboard-showcase { padding: 100px 10%; text-align: center; }
+        .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 50px; }
+        .dash-card { background: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333; }
+        .dash-card img { width: 100%; border-radius: 5px; margin-bottom: 15px; filter: grayscale(20%); transition: 0.4s; }
+        .dash-card img:hover { filter: grayscale(0%); transform: scale(1.02); }
+        .dash-card h3 { color: var(--gold); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+
+        /* Footer */
+        footer { padding: 60px 10%; background: #000; text-align: center; border-top: 1px solid #222; }
+        footer p { font-size: 14px; color: #555; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo-area">
+            <img src="perfume.jpg" alt="AK Perfume Logo" class="logo-img">
+            <div class="brand-name">ANEEL WATCHES</div>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#dashboards">DASHBOARDS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Defining Excellence</h1>
+            <p>Curated by Aneel | PITP Final Project</p>
+        </div>
+    </section>
+
+    <section id="about" class="profile-section">
+        <img src="aneel.jpg" alt="Aneel Rohit" class="profile-img">
+        <div class="profile-text">
+            <h2>Aneel Rohit</h2>
+            <p>I am a professional E-commerce enthusiast trained under the <strong>People's Information Technology Programme (PITP)</strong> at the University of Mirpurkhas. Supervised by <strong>Sir Rukhsar Ali</strong>, I have specialized in building digital brands like <strong>Aneel Watches</strong> and <strong>AK Perfume</strong>.</p>
+            <p>My expertise includes Shopify store development, product optimization, and Meta advertising strategies.</p>
+            <a href="https://www.linkedin.com/search/results/all/?keywords=Aneel%20Rohit" target="_blank" class="linkedin-badge">Connect on LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="dashboards" class="dashboard-showcase">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 45px;">Project Implementation</h2>
+        <p style="color: #888;">Live Look at my Store and Ad Management</p>
+
+        <div class="dashboard-grid">
+            <div class="dash-card">
+                <img src="daraz.jpg" alt="Daraz Dashboard">
+                <h3>Daraz Marketplace</h3>
+                <p style="font-size: 13px; color: #777;">Managing orders and product listings on Pakistan's largest marketplace.</p>
+            </div>
+            <div class="dash-card">
+                <img src="meta.jpg" alt="Meta Ads Manager">
+                <h3>Meta Business Manager</h3>
+                <p style="font-size: 13px; color: #777;">Advanced campaign structures for AK Perfume and Aneel Watches.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 style="color: var(--gold); margin-bottom: 10px;">AK PERFUME & WATCHES</h3>
+        <p>A Project by Aneel Rohit | Government of Sindh Initiative</p>
+        <p style="margin-top: 20px; font-size: 11px;">&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
